@@ -1,17 +1,7 @@
-import { combineReducers } from 'redux'
-import { fetchPosts } from '../actions'
+import { combineReducers } from 'redux';
 
-const postReducer = () => {
-    return fetchPosts;
-}
-
-const postSelector = (action) => {
-    if (action.type === 'POST_SELECTED') {
-        return action.payload;
-    }
-    return action;
-}
+import postsReducer from './postsReducer'
 
 export default combineReducers({
-    postAction: postReducer
+    postsReducer
 });

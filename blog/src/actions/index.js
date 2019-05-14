@@ -1,8 +1,3 @@
-import React from 'react'
-import ReaactDOM from 'react-dom'
-
-import axios from 'axios'
-
 import jsonplaceholder from '../apis/jsonPlaceholder'
 
 export const fetchPosts = () => async dispatch => {
