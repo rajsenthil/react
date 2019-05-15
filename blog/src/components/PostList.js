@@ -9,7 +9,7 @@ class PostList extends React.Component {
     }
 
     render() {
-        console.log("test " + this.props.posts)
+        console.log(this.props.posts)
         return <div className="item">Post list</div>;
     }
 }
